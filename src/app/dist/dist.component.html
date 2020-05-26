@@ -1,0 +1,40 @@
+<br>
+ <!-- <ngb-accordion [closeOthers]="true">
+    <div *ngFor="let p of cnt;let i=index;">
+    <ngb-panel id="{{i+1}}" title="{{p.state}}">
+      <ng-template ngbPanelContent>
+        <div *ngFor="let a of p.districtData;">
+        <p>{{a.district}} {{a.confirmed}} {{a.active}} {{a.recovered}} {{a.deceased}}</p>
+          </div>
+      </ng-template>
+    </ngb-panel>
+  </div>
+  </ngb-accordion> -->
+  <ngb-accordion [closeOthers]="true">
+    <div *ngFor="let p of cnt;let i=index;">
+    <ngb-panel id="{{i+1}}" title="{{p.state}}" class="state">
+      <ng-template ngbPanelContent>
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col" class="dist"><b>District</b></th>
+            <th scope="col" class="conf"><b>Confirm</b></th>
+            <th scope="col" class="act"><b>Active</b></th>
+            <th scope="col" class="rec"><b>Recovered</b></th>
+            <th scope="col" class="det"><b>Deceased</b></th>
+          </tr>
+          </thead>
+          <tbody>
+        <tr *ngFor="let a of p.districtData;">
+        <td class="dist">{{a.district}}</td> 
+        <td class="conf">{{a.confirmed}}</td> 
+        <td class="act">{{a.active}}</td> 
+        <td class="rec">{{a.recovered}}</td> 
+        <td class="det">{{a.deceased}}</td>
+        </tr>
+        </tbody>
+        </table>
+      </ng-template>
+    </ngb-panel>
+  </div>
+  </ngb-accordion>

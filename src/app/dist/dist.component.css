@@ -1,0 +1,20 @@
+.dist{
+    color:#800080;
+    font-weight: 500;
+}
+.conf{
+    color:brown;
+    font-weight: 600;
+}
+.act{
+    color:#0000FF;
+    font-weight: 700;
+}
+.rec{
+    color:rgb(28, 224, 28);
+    font-weight: 800;
+}
+.det{
+    color:red;
+    font-weight: 900;
+}

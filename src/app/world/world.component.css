@@ -1,0 +1,66 @@
+img{
+    height: 65px;
+    width:100px;
+}
+div{
+    text-align: center;
+}
+.card-header{
+    font-weight: 900;
+}
+.card-body{
+    font-weight: 700;
+}
+.flags{
+    background-color: rgb(159, 159, 159);
+    width: 150px;
+}
+.con{
+    color:#800080;
+    font-weight: 500;
+    width: 150px;
+}
+.pop{
+    color:brown;
+    font-weight: 500;
+    width: 150px;
+}
+.act{
+    color:#0000FF;
+    font-weight: 700;
+    width: 150px;
+}
+.rec{
+    color:rgb(28, 224, 28);
+    font-weight: 800;
+    width: 150px;
+}
+.det{
+    color:red;
+    font-weight: 900;
+    width: 150px;
+}
+/* Styles for wrapping the search box */
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}

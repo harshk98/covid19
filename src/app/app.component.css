@@ -1,0 +1,182 @@
+img{
+    background-color: honeydew;
+    height: 50px;
+    width: 50px;
+}
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .card{
+    border: 1px solid rgba(0,0,0,0.07) !important;
+  }
+  .card p{
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase !important;
+  }
+  .card .card-header {
+    padding: .5rem 0.5rem;
+    margin-bottom: 0;
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 0px !important;
+  }
+  .card .card-body{
+    padding: 0.5rem;
+  }
+  .card .card-body p{
+    font-size: 30px;
+  }
+  
+  .stateDataTable th, .stateDataTable td{
+    text-transform: uppercase;
+    font-weight: bold;
+  } 
+  .stateDataTable{
+    border-collapse: separate;
+  }
+  .stateDataTable td {
+    padding-top: .5em;
+    padding-bottom: .5em;
+  }
+  @media only screen and (max-width: 760px){
+    .stateMob {
+      font-size: 14px;
+    }
+    .stateMob th{
+      padding: 0.35rem !important;
+    }
+    .stateMob td{
+      padding: 0.35rem !important;
+    }
+    .stateMob thead tr th:nth-of-type(2) span { display: none; }
+    .stateMob thead tr th:nth-of-type(2):before { content: "Cnfrmd"; }
+    .stateMob thead tr th:nth-of-type(3) span { display: none; }
+    .stateMob thead tr th:nth-of-type(3):before { content: "Actv"; }
+    .stateMob thead tr th:nth-of-type(4) span { display: none; }
+    .stateMob thead tr th:nth-of-type(4):before { content: "Rcvrd"; }
+    .stateMob thead tr th:nth-of-type(5) span { display: none; }
+    .stateMob thead tr th:nth-of-type(5):before { content: "Dcsd"; }
+  
+    .card .card-body p {
+      font-size: 25px;
+    }
+  }
+  
+  /* .vvtable responsive css */
+  /* 
+  Max width before this PARTICULAR .vvtable gets nasty
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+      /* Force .vvtable to not be like .vvtables anymore */
+      .vvtable thead,.vvtable tbody,.vvtable th,.vvtable td,.vvtable tr { 
+          display: block; 
+      }
+      
+      /* Hide .vvtable headers (but not display: none;, for accessibility) */
+      .vvtable thead tr { 
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+      }
+      
+      .vvtable tr { border: 1px solid #ccc; }
+      
+      .vvtable td { 
+          /* Behave  like a "row" */
+          border: none;
+          border-bottom: 1px solid #eee; 
+          position: relative;
+      padding-left: 50%; 
+      text-align: right;
+      }
+      
+      .vvtable td:before { 
+          /* Now like a .vvtable header */
+          position: absolute;
+          /* Top/left values mimic padding */
+          top: 10px;
+          left: 6px;
+          width: 45%; 
+          padding-right: 10px; 
+      white-space: nowrap;
+      text-align: left;
+    }
+        /*
+      Label the data
+      */
+      .vvtable td:nth-of-type(1):before { content: "Area : "; }
+      .vvtable td:nth-of-type(2):before { content: "Unit : "; }
+    .vvtable td:nth-of-type(3):before { content: "Person In Charge : "; }
+      .vvtable td:nth-of-type(4):before { content: "Number : "; }
+  }
+  
+  /* home.js with card-details of info */
+    .card-info-font p{
+      font-size: 16px !important;
+    }
+    .card-header-info-bg-red{
+      background: #c1172f !important;
+      color: #fff;
+    }
+    .card-header-info-bg-purple{
+      background: #5849b4 !important;
+      color: #fff;
+    }
+    .card-header-info-bg-green{
+      background: #5aab38 !important;
+      color: #fff;
+    }
+    .card-body-info-bg-red-l{
+      background: #f8c7ce;
+      color: #c1172f;
+    }
+    .card-body-info-bg-purple-l{
+      background: #d9d5f4;
+      color: #5849b4;
+    }
+    .card-body-info-bg-green-l{
+      background:#ddf4d4;
+      color: #5aab38;
+    }

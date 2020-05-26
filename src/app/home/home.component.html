@@ -1,0 +1,167 @@
+<!-- <p>{{confirm}}</p>
+<p>{{active}}</p>
+<p>{{recover}}</p>
+<p>{{deceased}}</p>
+<p>{{rrate}} %</p>
+<p>{{drate}} %</p>
+<div class="col-lg-4">
+    <a  class="btn btn-outline-primary btn-lg btn-block" 
+    href="http://api.covid19india.org/states_daily_csv/confirmed.csv" target="_blank">
+    Confirmed
+    </a><br/>
+</div>
+<div class="col-lg-4">
+    <a  class="btn btn-outline-success btn-lg btn-block"
+    href="https://api.covid19india.org/states_daily_csv/recovered.csv" target="_blank">
+    Recovered
+    </a><br/>
+</div>
+<div class="col-lg-4">
+    <a  class="btn btn-outline-secondary btn-lg btn-block"
+    href="https://api.covid19india.org/states_daily_csv/deceased.csv" target="_blank">
+    Deceased
+    </a>
+</div>
+<p>{{lup}}</p> -->
+<div class="banner-div">
+    <img src="assets/images/banner.png" class="img-fluid" />
+    <hr/>
+<div class="container mt-5">
+    <h4 class="text-center mb-4">COVID-19 TRACKER: INDIA</h4>
+    <div class="row">
+        <div class="col-lg-3 col-6">
+            <div class="card shadow-sm text-danger ">
+                <div class="card-header">
+                    <p>Confirmed</p>
+                </div>
+                <div class="card-body">
+                    <p>{{confirm}}</p>
+                </div>
+            </div><br/>
+        </div> 
+            
+        <div class="col-lg-3 col-6">
+            <div class="card shadow-sm text-primary ">
+                <div class="card-header">
+                    <p>Active</p>
+                </div>
+                <div class="card-body">
+                    <p>{{active}}</p>
+                </div>
+            </div><br/>
+        </div>
+
+        <div class="col-lg-3 col-6">
+        <div class="card shadow-sm text-success ">
+            <div class="card-header">
+                <p>Recovered</p>
+            </div>
+            <div class="card-body">
+                <p>{{recover}}</p>
+            </div>
+        </div><br/>
+        </div>
+        
+        <div class="col-lg-3 col-6">
+        <div class="card shadow-sm text-secondary ">
+            <div class="card-header">
+                <p>Deceased</p>
+            </div>
+            <div class="card-body">
+                <p>{{deceased}}</p>
+            </div>
+        </div><br/>
+        </div>
+
+        <div class="col-lg-3 col-6">
+        <div class="card shadow-sm text-success ">
+            <div class="card-header">
+                <p>Recovery Rate</p>
+            </div>
+            <div class="card-body">
+                <p>{{rrate}} %</p>
+            </div>
+        </div><br/>
+        </div>
+
+        <div class="col-lg-3 col-6">
+        <div class="card shadow-sm text-danger ">
+            <div class="card-header">
+                <p>Deceased Rate</p>
+            </div>
+            <div class="card-body">
+                <p>{{drate}} %</p>
+            </div>
+        </div><br/>
+        </div>
+    </div>
+    <p class="float-right">Last Updated : {{lup}}</p>
+    <br/><br/>
+    <div class="row">
+        <div class="col-lg-4">
+        <a href="mailto:ncov2019@gov.in" target="_blank" class="text-decoration-none">
+            <div class="card shadow-sm card-info-font">
+                <div class="card-header card-header-info-bg-red">
+                    <p>Helpline Number & Email Id</p>
+                </div>
+                <div class="card-body card-body-info-bg-red-l">
+                    <p>011-23978046 or 1075 <br/> ncov2019@gov.in</p>
+                </div>
+            </div><br/>
+        </a>    
+        </div>
+        <div class="col-lg-4">
+        <a href="https://www.mohfw.gov.in/pdf/coronvavirushelplinenumber.pdf" target="_blank" class="text-decoration-none">
+            <div class="card shadow-sm card-info-font">
+                <div class="card-header card-header-info-bg-purple">
+                    <p>Helpline No.</p>
+                </div>
+                <div class="card-body card-body-info-bg-purple-l">
+                    <p>State/UTs <br/> Helpline No.</p>
+                </div>
+            </div><br/>
+        </a>    
+        </div>
+        <div class="col-lg-4">
+        <a href="https://wa.me/919013151515" target="_blank" class="text-decoration-none">
+            <div class="card shadow-sm card-info-font">
+                <div class="card-header card-header-info-bg-green">
+                    <p>MyGov Corona Helpdesk</p>
+                </div>
+                <div class="card-body card-body-info-bg-green-l">
+                    <p>Live HelpDesk <br/> https://wa.me/919013151515</p>
+                </div>
+            </div>
+        </a>    
+        </div>
+    </div>
+    <br/><hr/>
+    <h4 class="text-left mb-4">Daily State Report : </h4>
+    <div class="row">
+        <div class="col-lg-4">
+            <a  class="btn btn-outline-primary btn-lg btn-block" 
+            href="http://api.covid19india.org/states_daily_csv/confirmed.csv" target="_blank">
+            Confirmed
+            </a><br/>
+        </div>
+        <div class="col-lg-4">
+            <a  class="btn btn-outline-success btn-lg btn-block"
+            href="https://api.covid19india.org/states_daily_csv/recovered.csv" target="_blank">
+            Recovered
+            </a><br/>
+        </div>
+        <div class="col-lg-4">
+            <a  class="btn btn-outline-secondary btn-lg btn-block"
+            href="https://api.covid19india.org/states_daily_csv/deceased.csv" target="_blank">
+            Deceased
+            </a>
+        </div>
+    </div>
+    <hr/>
+    <div class="alert alert-success text-left mt-5">
+        <strong>Last Updated Time : </strong> {{lup}}
+    </div>
+
+    </div>
+    </div>
+
